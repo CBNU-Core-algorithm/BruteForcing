@@ -1,0 +1,12 @@
+AB = list(map(int, input().split()))
+count = 0
+print(AB)
+
+
+for i in range(AB[0], AB[1]+1):
+    gold_ms = str(i)
+    print(i)
+    if '4' and '7' in gold_ms:
+        count += 1
+
+print(count)
