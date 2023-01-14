@@ -9,14 +9,14 @@ for i in range(m, n+1):
     if i % j == 0:
         num.append(int(j**2))
 
-#합 구하기
-for k in num:
-    sum += k
-
-print(sum)
-
-#리스트가 비어있으면 -1, 안 비어있으면 최솟값 찾기
+#리스트가 비어있으면 -1 출력, 아니면 합과 최솟값 구하기
 if len(num) == 0:
     print(-1)
 else:
+    for k in num:
+        sum += k
+    print(sum)
     print(min(num))
+
+
+
